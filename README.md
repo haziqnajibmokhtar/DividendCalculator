@@ -11,9 +11,9 @@ Simple Android application to calculate monthly and total dividends from an inve
 - About page with author info and GitHub link.
 
 ## Author
-Adam Bin Ali  
-Matric no: 1234  
-Course: ISP550
+TG HAZIQ NAJIB TG MOKHTAR  
+Matric no: 2023485702  
+Course: CDCS240
 
 ## How to build & run
 1. Open Android Studio.
@@ -22,7 +22,7 @@ Course: ISP550
 4. Run on emulator or device.
 
 ## GitHub
-This README contains a placeholder repository URL: `https://github.com/yourusername/dividendcalculator`. Follow instructions below to create the repo and push.
+This README contains a placeholder repository URL: `https://github.com/haziqnajibmokhtar/dividendcalculator`. Follow instructions below to create the repo and push.
 
 ## Create GitHub repository (example commands)
 ```bash
