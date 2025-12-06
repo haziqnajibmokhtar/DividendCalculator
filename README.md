@@ -1,36 +1,76 @@
-# DividendCalculator (Android - Java)
+DividendCalculator (Android - Java)
+A simple and clean Android application that calculates monthly and total dividend returns based on invested fund amount, annual dividend percentage, and number of months.
+Includes a dedicated About page, toolbar menu navigation, and GitHub link redirection.
 
-Simple Android application to calculate monthly and total dividends from an invested fund.
+App Features
+1. Dividend Calculation
 
-## Features
-- Accepts invested fund amount, annual dividend rate (%), and number of months (max 12).
-- Calculates:
-  - `monthlyDividend = (rate / 100 / 12) * amount`
-  - `totalDividend = monthlyDividend * months`
-- Displays results formatted to 2 decimal places.
-- About page with author info and GitHub link.
+User inputs:
+Invested Fund Amount (RM)
+Annual Dividend Rate (%)
+Months Invested (1–12)
 
-## Author
-TG HAZIQ NAJIB TG MOKHTAR  
-Matric no: 2023485702  
-Course: CDCS240
+Application performs:
+monthlyDividendRate = (annualRate / 100) / 12
+monthlyDividend = monthlyDividendRate * investedFund
+totalDividend = monthlyDividend * numberOfMonths
+Results are formatted to two decimal places using DecimalFormat.
 
-## How to build & run
-1. Open Android Studio.
-2. `File` → `New` → `Import Project` and select this project folder (or open the folder).
-3. Make sure your SDK and gradle are up to date. Minimum SDK is API 21.
-4. Run on emulator or device.
+2. Clean UI Design
+Material Components TextInputLayout for input fields.
+ScrollView layout for smooth display on all devices.
+Rounded result display using rounded_background.xml.
 
-## GitHub
-This README contains a placeholder repository URL: `https://github.com/haziqnajibmokhtar/dividendcalculator`. Follow instructions below to create the repo and push.
+3. Toolbar + Menu Navigation
+Custom Toolbar integrated in MainActivity.
 
-## Create GitHub repository (example commands)
-```bash
-# in project root
+Options menu:
+Home
+About
+Smooth navigation to AboutActivity via menu item.
+
+4. About Page
+Custom toolbar with back/up navigation.
+
+Displays:
+App name
+Author name
+Matric number
+Course info
+Footer copyright
+Clickable GitHub repository link.
+
+Author
+Haziq Najib Mokhtar
+Matric No: 2023485702
+Course: CDCS240 — Mobile Technology and Development
+
+How to Build & Run
+Open Android Studio.
+Click:
+File → New → Import Project
+or open the project folder directly.
+
+Ensure:
+Android SDK installed (Minimum SDK: API 21)
+Gradle updates completed
+
+Run on:
+Android Emulator, or
+Real Android Device (USB Debugging)
+
+
+GitHub Repository
+Official Project URL:
+https://github.com/haziqnajibmokhtar/DividendCalculator
+
+Create & Push to GitHub (Commands)
+# In the project root folder
 git init
 git add .
-git commit -m "Initial commit: DividendCalculator"
-# create a repository on GitHub (via website) and copy HTTPS URL, then:
-git remote add origin https://github.com/yourusername/dividendcalculator.git
+git commit -m "Initial commit: DividendCalculator App"
+
+# Add your GitHub remote (replace with your repo URL)
+git remote add origin https://github.com/haziqnajibmokhtar/DividendCalculator.git
 git branch -M main
 git push -u origin main
